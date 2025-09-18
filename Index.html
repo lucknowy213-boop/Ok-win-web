@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meri Pehli Website</title>
+  <style>
+    body{font-family:Arial, sans-serif; padding:2rem;}
+    header{border-bottom:1px solid #ddd; margin-bottom:1rem;}
+    .btn{display:inline-block;padding:.5rem 1rem;border:1px solid #333;border-radius:6px;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Namaste! Yeh meri pehli website hai</h1>
+  </header>
+
+  <p>Yahan mera chhota intro hai. Main web developer seekh raha/rahi hoon.</p>
+
+  <a class="btn" href="#contact">Contact karo</a>
+
+  <section id="contact" style="margin-top:2rem">
+    <h2>Contact</h2>
+    <p>Email: <strong>tumhara@email.com</strong></p>
+  </section>
+
+  <script>
+    // chhota JS example
+    document.querySelector('.btn').addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector('#contact').scrollIntoView({behavior:'smooth'});
+    });
+  </script>
+</body>
+</html>
